@@ -1,0 +1,70 @@
+#border-style-list{
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+
+    /* 리스트의 스타일 타입을 변경하는 속성 */
+    list-style-type: none; /* none 자리에 disc 등등등 사용가능 */
+
+    padding: 5px;
+}
+
+#border-style-list>li{
+    border: solid 3px black;
+    margin: 3px;
+}
+#border-style-list >li:nth-child(2){
+    border-style: dotted;
+}
+#border-style-list >li:nth-child(3){
+    border-style: dashed;
+}
+#border-style-list >li:nth-child(4){
+    border-style: double;
+    border-width: 10px;
+}
+#border-style-list >li:nth-child(5){
+    border-style: inset;
+    border-width: 8px;
+}
+#border-style-list >li:nth-child(6){
+    border-style: outset;
+    border-width: 8px;
+}
+
+/*************************************************************/
+#multivalues {
+    list-style-type: none; 
+    padding: 3px;
+}
+
+#multivalues > li{
+    border: solid 5px black;
+    margin: 3px
+}
+
+#multivalues > li:first-child{
+    border-color: bisque;
+    border-style: dashed;
+}
+
+/* 값을 2개 주는 경우 [위/아래][왼/오] */
+#multivalues > li:nth-child(2){
+    border-color: green blue;
+    border-style: solid dotted;
+    border-width: 15px 5px;
+}
+
+/* 값을 3개 주는 경우 [위][왼/오][아래] */
+#multivalues > li:nth-child(3){
+    border-color: red green blue;
+    border-style: solid dotted inset;
+    border-width: 5px 10px 15px;
+}
+
+/* 값을 4개 주는 경우 [위] [오] [아래] [왼] */
+#multivalues > li:nth-child(4){
+    border-color: red green blue orange;
+    border-style: dotted;
+    border-width: 5px 10px 15px 20px;
+}

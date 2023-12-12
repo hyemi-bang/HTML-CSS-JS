@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14_Float.html</title>
+    <link rel="stylesheet" href="./sheets/css14.css">
+</head>
+
+<body>
+
+    <h3>#1 Float (실수) </h3>
+    <ul>
+        <li>해당 요소를 float으로 설정하면 다른 내용들이 해당 요소를 비켜가게 만든다.</li>
+        <li>float : left, rigth를 설정하여 왼쪽 / 오른쪽에 떠있게 된다</li>
+        <!-- ※ 글 길이에 상관없이 설정해 준 위치에 뜬다 -->
+        <li>float을 같은 방향으로 설정한 요소는 해당 방향으로 차곡차곡 쌓이고,<br>
+            &nbsp;&nbsp;&nbsp;다른 방향으로 설정한 요소는 각자의 방향으로 쌓인다.</li>
+        <li>clear 속성을 통해 해당 방향에 요소가 계속 쌓이는 것을 막을 수 있다</li>
+        <li>float이 설정된 요소는 해당 요소를 포함한 부모 요소의 크기 결정에 영향을 미치지 못한다</li>
+    </ul>
+
+    <h5>float을 같은 방향으로 설정 하였을 때</h5>
+    <div id="float-div1">
+        <img id="img1-1" src="../assets/image/puppy2.jpg" alt="puppy2">
+        <img id="img1-2" src="../assets/image/puppy.jpg" alt="puppy1">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a ullamcorper orci. 
+        Aenean iaculis, arcu sed varius faucibus, ante mi pharetra ex, in feugiat nisl nisl ut quam. 
+        Mauris at condimentum neque. Curabitur velit nibh, scelerisque vel leo ut, eleifend fringilla risus. 
+        Phasellus dictum rhoncus orci, sit amet gravida neque aliquam vel. 
+        Nullam eget nunc augue. Sed tempus nec elit ut rhoncus. Phasellus vestibulum libero et malesuada vehicula.
+    </div>
+
+    <h5>float을 다른 방향으로 설정 하였을 때</h5>
+    <div id="float-div2">
+        <img id="img2-1" src="../assets/image/rabbit.jpg" alt="rabbit">
+        <img id="img2-2" src="../assets/image/rabbit2.jpg" alt="rabbit2">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a ullamcorper orci. Aenean iaculis, arcu sed varius
+        faucibus, ante mi pharetra ex, in feugiat nisl nisl ut quam. Mauris at condimentum neque. Curabitur velit nibh,
+        scelerisque vel leo ut, eleifend fringilla risus. Phasellus dictum rhoncus orci, sit amet gravida neque aliquam
+        vel. Nullam eget nunc augue. Sed tempus nec elit ut rhoncus. Phasellus vestibulum libero et malesuada vehicula.
+    </div>
+
+    <h5>clear 속성을 사용</h5>
+    <div id="float-div3">
+        <img id="img3-1" src="../assets/image/puppy2.jpg" alt="puppy2">
+        <img id="img3-2" src="../assets/image/puppy.jpg" alt="puppy1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Neque beatae tempora cupiditate, veritatis veniam tempore 
+        praesentium quia qui eos vitae porro, aliquam fugit facere 
+        blanditiis aperiam reiciendis in, similique quidem!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      <!-- <div style="clear: left";></div> -->  
+        Neque beatae tempora cupiditate, veritatis veniam tempore 
+        praesentium quia qui eos vitae porro, aliquam fugit facere 
+        blanditiis aperiam reiciendis in, similique quidem!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Neque beatae tempora cupiditate, veritatis veniam tempore 
+        praesentium quia qui eos vitae porro, aliquam fugit facere 
+        blanditiis aperiam reiciendis in, similique quidem!
+    </div>
+
+    <h5>float 요소의 크기에 비해 내용이 부족한 경우 요소의 크기를 float요소의 크기만큼 늘리는 방법</h5>
+    <div id="float-div4">
+        <img id="img4-1" src="../assets/image/rabbit.jpg" alt="rabbit">
+         Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Neque beatae tempora cupiditate, veritatis veniam tempore 
+        praesentium quia qui eos vitae porro,
+        <div style="clear : right"><!-- 요소를 마무리 짓기위한 요소 --></div>
+        <!-- div style=" border : solid 1px black; clear : right" -->
+        <!-- 해당 마감처리 자리는  ::after 자리  -->
+
+    </div>
+
+    <h5>float 요소의 크기에 비해 내용이 부족한 경우 부모 요소의 크기가 이상해진다</h5>
+    <p>
+        <dl>
+            <dd style="font-size: 0.8em;">글 내용보다 이미지가 커서 이미지가 div를 넘어가게 보이는 상황<br>
+                이를 맞춰주기 위해서 위의 방식대로 글내용이 들어간 부분을 float요소의 크기만큼 늘려줘야한다. <br>
+                즉, 이미지가 들어간 반대쪽에 clear를 줌으로써 이미지가 들어갈 공간까지 div를 늘려주는것
+            </dd>
+        </dl>
+    </p>
+    <div id="float-div5">
+        <img id="img5-1" src="../assets/image/rabbit.jpg" alt="rabbit">
+         Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Neque beatae tempora cupiditate, veritatis veniam tempore 
+        praesentium quia qui eos vitae porro,
+    </div>
+    <br>
+    <h5>float 성질을 이용해 레이아웃 구성하기 (이전 방식)</h5>
+    <div id="float-layout">
+       <div>1</div>
+       <div>2</div>
+       <div>3</div>
+       <div>4</div>
+       <div>5</div>
+    <!-- <div style="clear: left;"></div>  마감처리를 위해 div를 만들어 주기보단 css파일의 ::after를 해주는게 낫다--> 
+    </div>
+
+ 
+
+</body>
+
+</html>

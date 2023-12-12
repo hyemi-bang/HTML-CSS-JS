@@ -1,0 +1,55 @@
+body {
+    /* body tag가 기본적으로가지고 있는 margin이 있다. 웹페이지에 딱 붙이고 싶다면 body margin = 0 */
+    margin: 0;
+}
+
+#testDiv1 {
+    border: solid 13px black;
+    width: 300px;
+    height: 300px;
+    margin: 50px; /*margin은 위치(다른 요소와의 거리) 만 조절할 뿐 크기에 관여하지 않는다 */
+    /* 
+    margin-top: ;
+    margin-bottom: ;
+    margin-left: ;
+    margin-right: ; 다양하게 설정도 가능하다
+    */
+    padding: 0 0 0 150px;
+
+    width: 50%; /* padding이 들어간 경우 50%가 50%가 아님, content-box가 전체 화면크기의 50% 이다 */
+
+    padding: 50px;  /*패딩의 크기가 전체의 크기에 가산된다 
+        content-box가 존재함. 그 content-box에 padding이 적용됨 */
+
+
+}
+
+#testDiv2 {
+    border: solid 2px black;
+    width: 500px;
+    height: 200px;
+    margin: 80px;
+}
+
+#testDiv3 {
+    border: solid 2px black;
+    width: 400px;
+    height: 300px;
+    margin: auto;
+}
+/* 전체 크기는 width + border-width + padding이다 */
+#content-box {
+    box-sizing: content-box;
+    width: 200px;
+    height: 200px;
+    border: solid 5px black;
+    padding: 30px;
+}
+/*  padding 과 border-width에 영향을 받지 않고 width/heigth만으로 전체 크기를 결정한다  */
+#border-box {
+    box-sizing: border-box;
+    width: 200px;
+    height: 200px;
+    border: solid 5px black;
+    padding: 30px;
+}

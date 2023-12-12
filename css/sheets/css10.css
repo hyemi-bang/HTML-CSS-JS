@@ -1,0 +1,35 @@
+  @import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Cute+Font&family=Gasoek+One&family=Sunflower:wght@300&display=swap');
+
+/* import를 가져올때 style이 있다면 해당 위치는 CSS위치라 style 사용할 필요가 없음으로 지우기 */
+
+#gogle-font-ex1{
+    /* 폰트를 적용할 때 ,를 사용해 여러개를 적용해두면
+    앞의 글꼴이 사용 될 수 없을때 뒤의 글꼴을 사용한다. */
+    font-family: 'Gasoek One', '굴림', cursive;
+                    /* 글꼴 이름을 가져와 적는다. */
+    font-size: 25px;
+}
+
+#gogle-font-quiz1{
+    font-family: 'Sunflower', cursive;
+    font-size: 19px;
+    color: white;
+    text-shadow: 1px 5px 5px black,
+                 0 0 15px black;
+}
+
+  #gogle-font-quiz2{
+    font-family: 'Bagel Fat One', cursive;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    text-shadow: 0 0 18px gold,
+                 0 0 20px goldenrod;
+}
+
+#gogle-font-quiz3{
+    font-family: 'Cute Font', cursive;
+    font-size: 25px;
+    text-shadow: 5px 3px 2px blueviolet,
+                 0 0 20px plum;
+}

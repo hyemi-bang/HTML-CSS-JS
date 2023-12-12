@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; /* 1:2:1 비율 */
+    padding: 10px 0;
+     /* justify-content: space-between; */
+    align-items: center;
+}
+.container {
+    grid-column: 1;
+    width: max-content;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-family: 'Pacifico', cursive;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+    gap: 40px;
+}
+
+.bottom_icon{
+    margin-top: 100%;
+}
+
+#fixed {
+    border-right: 1px solid gray;
+    position: fixed;
+    z-index: 99;
+    width: 20%;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+.main {
+    grid-column: 2; /* 두 번째 컬럼에 위치 */
+    /* background-color: yellowgreen; */
+    width: 100%; 
+}
+
+.main-content {
+    padding: 3px; 
+    margin-bottom: 20px;
+}
+
+.right-sight{
+    grid-column: 3;
+    width: auto;
+    height: 100%;
+    border-left: 1px solid gray;
+   
+}
+
+#account_recom{
+    padding: 20px;
+    text-align: left;
+    font-size: 1.5em;
+}
+
+#recommendation{
+    font-size: 0.8em;
+    color: darkgray;
+    font-weight: bold;
+}
+
+#other_user > i{
+    font-size: 2.5em;
+}
+
+#other_user > div{
+    display: flex;
+    align-items: center;
+    font-size: 0.8em;
+    margin-bottom: 10px;
+}
+
+#other_user > div i {
+    font-size: 1.5em; /* 아이콘 크기를 키움 */
+    margin-right: 5px; /* 아이콘과 텍스트 간격 조절 */
+    margin-bottom: 15%;
+}
+
+
+[class^="top-reels"]{
+    display: flex;
+    /* padding: 10px;
+    margin-right: 10px; */ 
+    justify-content: space-evenly;
+    margin-bottom: -45px;
+    
+}
+.top-reels{
+    font-size: 2.5em;
+    color: blueviolet;
+}
+
+.top-reels > :hover {
+    color: grey;
+}
+
+.top-reels-name{
+    font-size: medium;
+}
+
+.post{
+    margin: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    position: relative;
+    /* border: 1px black solid; */
+}
+
+.post > img{
+    width: 350px;
+    height: auto;   
+    display: block; 
+    border-radius: 10px; 
+}
+
+.top-username{
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(73, 65, 65, 0.7);
+    /* border: 1px black solid; */
+    position: absolute;
+    top:-30px;
+    left: 10px;
+}
+.username{
+    /* border: 1px black solid; */
+    position: absolute;
+    bottom: -130px;
+    left: 5px;
+    color: black;
+    font-weight: bold;
+}
+
+.username >div{
+    font-size: small;
+}
+
+#emoji{
+    position: absolute;
+    bottom: -20px;
+    left: 5px;
+    font-size: medium;
+}
+
+[id^="insta"]{
+    letter-spacing: 3px;
+    color: gray;
+    font-size: small;
+    margin-top: 15%;
+}
+
+#instagram1{
+    text-align: center;
+}
+
+#instagram2{
+    text-align: left;
+}

@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+}
+
+#quiz{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1000px;
+    height: 800px;
+    border: 1px black solid;
+    text-align: center;
+}
+
+/* #quiz > * {
+    border: solid black 1px;
+} */
+
+#quiz> :first-child{
+    width: 40%;
+    height: 50%;
+    padding: 10px;
+
+}
+
+#quiz> :first-child > div {
+    background-color: darkgoldenrod;
+    width: 100%;
+    height: 100%;
+}
+
+#quiz> :nth-child(2){
+    width: 60%;
+    height: 50%;
+    padding: 10px;
+}
+
+#inner1{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+#inner1 > * {
+    width: 48%;
+    height: 47%;
+    background-color: lightcoral;
+}
+
+
+#quiz> :nth-child(3){
+    width: 60%;
+    height: 50%;
+    padding: 10px;
+}
+
+#quiz> :nth-child(4){
+    width: 40%;
+    height: 50%;
+    padding: 10px;
+}
+
+#quiz> :nth-child(4) > div {
+    background-color: darkgoldenrod;
+    width: 100%;
+    height: 100%;
+}
+

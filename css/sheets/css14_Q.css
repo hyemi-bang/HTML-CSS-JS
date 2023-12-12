@@ -1,0 +1,116 @@
+#page-layout {
+    border: 3px solid black;
+    width: 500px;
+    font-size: 30px;
+    text-align: center;
+}
+
+#page-layout > div {
+    height: 100px;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px solid black;
+}
+
+#page-layout > :first-child {
+    background-color: purple;
+}
+
+#page-layout > :nth-child(2) {
+    background-color: salmon;
+}
+
+#page-layout > :nth-child(3) {
+    background-color: plum;
+    width: 70%;
+    height: 150px;
+    float: left;
+    padding: 10%;
+}
+
+#page-layout > :nth-child(4) {
+    background-color: firebrick;
+    height: 350px;
+    width: 30%;
+    float: right;
+    padding-top: 30%;
+}
+
+#page-layout > :nth-child(5) {
+    background-color: mistyrose;
+    height: 350px;
+    width: 70%;
+    padding-top: 45%;
+}
+
+#page-layout > :nth-child(6) {
+    background-color: darkcyan;
+}
+
+
+#page-layout::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+/* 연습문제 2번째 방법 */
+#page-layout2 {
+    width: 500px;
+    font-size: 30px;
+    text-align: center;
+}
+
+#page-layout2 > div {
+    box-sizing: border-box;
+    border: 2px solid black;
+}
+
+/* HEADER */
+#page-layout2 > :first-child {
+    background-color: pink;
+}
+/* NAV */
+#page-layout2 > :nth-child(2) {
+    background-color: salmon;
+}
+
+#section {
+    float: left;
+    width: 60%;
+    box-sizing: border-box;
+    border: 3px solid black; 
+   }
+
+/* SECTION */
+#section > :nth-child(1) {
+    height: 155px;
+    background-color: rgb(116, 0, 139);
+    border-bottom: 3px solid black;
+
+}
+
+/* ARTICLE */
+#section > :nth-child(2) {
+    height: 192px;
+    background-color: beige;
+    border-bottom: 3px solid black;
+
+}
+
+/* ASIDE */
+#page-layout2 > :nth-child(4) {
+    height: 355px;
+    background-color: darkgrey;
+}
+/* FOOTER */
+#page-layout2 > :nth-child(5) {
+    background-color: darkcyan;
+}
+
+#page-layout2::after {
+    content: '';
+    display: block;
+    clear: both;
+}

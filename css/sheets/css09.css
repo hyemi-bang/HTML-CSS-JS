@@ -1,0 +1,50 @@
+[id^="text-"] {
+    padding: 5px;
+}
+
+#text-shadow-ex1 {
+    font-size: 30px;
+    text-shadow: 5px 5px 3px red;
+    /* x축 커질 수록 오른쪽으로 멀어짐, y축 커질 수록 아래로 내려감, 
+    번짐정도가 0에 가까울 수록 또렷한 그림자 */
+}
+
+#text-shadow-ex2 {
+    font-size: 30px;
+    color: white;
+    background-color: black;
+    text-shadow: 0 0 15px gold,
+                 0 0 13px goldenrod,
+                 0 0 10px greenyellow;
+}
+
+#text-shadow-ex3 {
+    font-size: 20px;
+    color: white;
+    text-shadow: -1px -1px 1px blue,
+                 -1px 1px 1px rgb(32, 33, 122),
+                 1px 1px 1px rgb(47, 130, 255),
+                 1px -1px 1px skyblue;
+}
+
+#box-shadow-ex1{
+    font-size: 20px;
+    box-sizing: border-box;
+    padding: 5px;
+    width: 200px;
+    height: 300px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 0 black;
+}
+
+#box-shadow-ex2{
+    font-size: 20px;
+    box-sizing: border-box;
+    padding: 5px;
+    width: 200px;
+    height: 300px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 0 gray,
+                10px 10px 0 black,
+                15px 15px 0 rgb(80, 53, 53);
+}

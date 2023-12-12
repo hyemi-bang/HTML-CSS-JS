@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11_아이콘.html</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        .material-symbols-rounded {
+            font-variation-settings:
+                'FILL' 0,
+                /* 1채운다, 0 안채운다*/
+                'wght' 1500,
+                'GRAD' 0,
+                /*굵기*/
+                'opsz' 24
+                /* https://developers.google.com/fonts/docs/material_symbols?hl=ko */
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/2706cc5797.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <h3># Icon CDN</h3>
+
+    <ul>
+        <li>Gogle Icon</li>
+        <li>Font-awesome</li>
+        <li>아이콘은 실제로 글꼴을 응용한 방식이기 때문에 color와 font-size로 색깔과 크기 설정가능</li>
+        <li>일반적으로 &lt;i&gt; 태그를 아이콘으로 사용한다</li>
+        <li></li>
+    </ul>
+
+    <h3># Gogle Icon</h3>
+    <h6><a href="https://fonts.google.com/icons?icon.style=Outlined">gogle font</a></h6>
+    <ul>
+        <li>
+            <!-- div : 블록요소(p,h..), 아무 의미없이 영역만 만드는 태그 -->
+            <!-- span : 인라인요소(a,i,b..), 아무 의미없이 텍스트의 일부를 선택할 수 있는 태그 -->
+
+            <span class="material-symbols-outlined">settings</span>
+            <span class="material-symbols-outlined">favorite</span>
+            <i class="material-symbols-outlined">logout</i><br>
+        </li>
+
+        <li>
+            <span style="font-size: 55px;" class="material-symbols-outlined">settings</span>
+            <span style="font-size: 55px; color: magenta;" class="material-symbols-outlined">favorite</span>
+            <i style="font-size: 55px; color: hotpink;" class="material-symbols-outlined">logout</i><br>
+
+        </li>
+        <li>
+            <span style="font-size: 55px; color: goldenrod" class="material-symbols-rounded">star</span>
+        </li>
+    </ul>
+
+    <h3>#Font Awesome</h3>
+    <h6><a href="https://fontawesome.com/">font awesome</a></h6>
+    <div>
+        <i style="color: brown; font-size: 38px;" class="fa-brands fa-instagram"></i>
+    </div>
+    <h6><a href="https://fontawesome.com/docs/web/style/styling">Animating Icons</a></h6>
+    <div>
+        <i style="color: brown; font-size: 38px;" class="fa-brands fa-instagram fa-beat"
+            style="--fa-animation-duration: 0.5s;"></i>
+        <i class="fa-solid fa-circle-plus fa-beat"></i>
+        <i class="fa-solid fa-heart fa-beat"></i>
+        <i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s;"></i>
+        <i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 2s;"></i>
+        <i class="fa-solid fa-heart fa-beat" style="--fa-beat-scale: 2.0;"></i>
+        <i style="font-size: 55px; color: blue; " class="fa-solid fa-image fa-flip"></i> 
+        <i style="font-size: 55px; color: gold;" class="fa-solid fa-bell fa-shake"></i>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+
+*{
+    box-sizing: border-box;
+}
+
+#container, #container2 {
+    border:solid 3px black;
+}
+
+#container > div {
+    border: solid 1px red;
+    display: inline;
+}
+
+#container2 > span {
+    border: solid 1px red;
+    display: block;
+    margin: 3px;
+}
+
+#example1, #example2, #example3 {
+    border: 3px solid black;
+    padding: 10px;
+}
+
+#example1 > div {
+    /* width: 100px; */
+    /* height: 100px; */
+    background-color: navy;
+    color: white;
+    font-weight: 900; /*900 = bold*/
+    padding: 30px;
+    margin: 5px;
+}
+
+#example2 > span {
+    width: 50px;
+    height: 50px;
+    background-color: navy;
+    color: white;
+    font-weight: 900; /*900 = bold*/
+    padding: 30px;
+    margin: 30px;
+}
+
+#example3 > span {
+    display: inline-block;
+    background-color: navy;
+    color: white;
+    font-weight: 900; /*900 = bold*/
+    padding: 30px;
+    margin: 10px;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.red{
+    background-color: red;
+    color: white;
+}
+
+.gold{
+    background-color: gold;
+    color: black;
+}
+.green{
+    background-color: green;
+    color: white;
+}
+.none{
+    display: none;
+}
+
+.hidden{
+    visibility: hidden;
+}

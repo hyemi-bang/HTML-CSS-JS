@@ -1,0 +1,46 @@
+*{
+    user-select: none;
+    /* 블럭 지정되지 않게 */
+}
+
+#container{
+    box-sizing: border-box;
+    border: solid 3px plum;
+    width: 500px;
+    padding: 5px;
+    word-spacing: -5px; /*간격*/
+}
+
+#container > i {
+    font-size:  30px;
+}
+
+/* #container > i:nth-child(3){
+    font-size: 50px;
+} */
+
+#container > i:nth-last-child(3){
+    font-size: 50px;
+}
+
+#mylink1{
+    text-decoration: none;
+    font-size: 30px;
+    color: aquamarine;
+}
+/* mylink1이 방문한적 없을때 */
+#mylink1:link{
+    color : greenyellow;
+}
+/* mylink1이 방문했을때 */
+#mylink1:visited{
+    color : purple;
+}
+/* mylink1이 방문했을때 */
+#mylink1:hover{
+    color : gainsboro;
+}
+/* mylink1이 클릭하고 있을때 , active는 맨 밑에 놓아야 visited 상태일때도 적용된다*/
+#mylink1:active{
+    color : yellowgreen;
+}

@@ -1,0 +1,111 @@
+/* 
+#float-div1 {
+    border: 3px solid black;
+    width: 500px;
+}
+ */
+
+[id*="div"] {
+    border: 3px solid black;
+    width: 400px;
+    text-align: center;
+}
+/********************************/
+#img1-1 {
+    width: 100px;
+    height: auto;
+    float: right;
+}
+
+#img1-2 {
+    width: 100px;
+    height: auto;
+    float: right;
+}
+/********************************/
+#img2-1 {
+    width: auto;
+    height: 200px;
+    float: right;
+}
+
+#img2-2 {
+    width: 100px;
+    height: auto;
+    float: left;
+}
+/********************************/
+#img3-1{
+    width: 150px;
+    height: auto;
+    float: left;
+}
+
+#img3-2{
+    width: 150px;
+    height: auto;
+    float: right;
+    clear: left; /*왼쪽에 다른 float요소가 없게끔 해달라는 설정 */
+}
+
+/********************************/
+#img4-1{
+    width: 200px;
+    height: auto;
+    float: right;
+    clear: left;
+}
+
+#img5-1{
+    width: 150px;
+    height: auto;
+    float: right;
+    clear: left;
+}
+/********************************/
+#float-layout {
+    width: 1000px;
+    border: 1px solid black;
+    color: white;
+}
+
+#float-layout > div {
+    height: 100px;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#float-layout > :first-child {
+    background-color: brown;
+    width: 20%;
+    /* 너비를 설정하지 않으면, 100%로 되어있기 때문에 화면 사이즈에 맞춰서 같이 이동한다 */
+}
+
+#float-layout > :nth-child(2) {
+    background-color: salmon;
+    width: 60%;
+}
+
+#float-layout > :nth-child(3) {
+    background-color: rgb(88, 67, 64);
+    width: 20%;
+}
+
+#float-layout > :nth-child(4) {
+    background-color: seagreen;
+    height: 500px;
+    width: 80%;
+}
+
+#float-layout > :nth-child(5) {
+    background-color: burlywood;
+    height: 500px;
+    width: 20%;
+}
+/* 마감처리를 위해 */
+#float-layout::after{
+    content: '';
+    display: block;
+    clear: both;
+}

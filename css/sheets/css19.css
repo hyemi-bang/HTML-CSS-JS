@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+}
+
+#example-stand{
+    display: flex;
+    justify-content: space-evenly;
+    border: solid 1px black;
+}
+
+.box{
+    border: solid black 3px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    /* padding-top: 30px; */
+    line-height: 90px ;
+    /* 텍스트가 한 줄일때 세로 정렬을 위해 줄 높이를 수정하는 것이 가능하다.
+    두 줄 이상이 될 경우에는 사용하지 않아햐 하는 상황 */
+}
+
+.original{
+    border: dashed 1px black;
+}
+
+.translate{
+    background-color: red;
+    color: white;
+    transition: all 1s ease-in;
+}
+
+.translate:hover{
+    transform: translate(50px, 0); /* (x축, y축) 으로 이동*/
+    transform: translate(50px, -50px);
+}
+
+.scale{
+    background-color: gray;
+    color: white;
+    transition: all 1s ease-in;
+}
+
+.scale:hover{
+    transform: scale(1.2, 0.75); /* (x축,y축) 으로 크기 변화 */
+    border-radius: 50px; 
+    /* 동그랗게 만들어라 ~ */
+}
+
+.skew{
+    background-color: midnightblue;
+    color: white;
+    transition: all 1s ease-in;
+}
+
+.skew:hover{
+    transform: skew(20deg, -20deg); /* (x축,y축) 으로 몇 도 기울일지 */
+}
+
+.rotate{
+    background-color: rgb(82, 175, 102);
+    color: white;
+    transition: all 2s ease-out;
+}
+
+.rotate:hover{
+    transform: rotate(180deg); /* 몇 도 회전을 시킬지 */
+    transform: rotate(760deg) scale(3);
+}

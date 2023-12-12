@@ -1,0 +1,33 @@
+#testDiv{
+    border: solid 3px black;
+    padding: 3px;
+    text-align: justify;
+}
+/* 첫번쨰 글자 */
+#testDiv::first-letter{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+/* 첫번째 줄 */
+#testDiv::first-line{
+    text-decoration: underline 1px solid black;
+}
+/* 블록 지정에 대한 스타일 변경 */
+#testDiv::selection{
+    background-color: cadetblue;
+    color: white;
+}
+/* ※ before,after 중요!!!! */
+/* content 를 사용해 원하는 내용을 넣을 수 있다  */
+
+#testDiv::before{
+    letter-spacing: -1px;
+    content: ' 앞에 원하는 내용. 보더 보다는 앞에 있다. 블럭 지정이 되지 않는다.';
+
+}
+
+#testDiv::after{
+    content: ' 뒤에 원하는 내용, url()통해 이미지도 넣어도 된다.';
+    content: '🥺' '😶‍🌫️';    
+    /* content: url('https://media.tenor.com/JJjMgyFWIwIAAAAC/%EC%B9%B4%EB%A6%AC%EB%82%98.gif'); */
+}

@@ -1,0 +1,20 @@
+/* css03.css */
+.detail{
+    font-size: 0.8em;
+}
+
+#quiz1 li:nth-of-type(even){
+   border : 2px solid red;
+}
+#quiz2 li:first-child, li:last-child{
+    color : red;
+}
+
+/* 선생님 해설 */
+#quiz1 > li:nth-child(even){
+    border : 2px solid red;
+ }
+
+#quiz2 > li:first-child, #quiz2 > li:last-child{
+    color : red;
+}

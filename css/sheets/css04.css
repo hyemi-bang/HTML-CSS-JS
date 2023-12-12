@@ -1,0 +1,80 @@
+div{
+    border: solid 3px black;
+    height: 300px; /*요소의 높이 설정, 설정하지 않으면 글자 사이즈의 높이 만큼만 생성됨*/
+    font-size: 30px;
+}
+#div1 {
+    background-image: url('https://i.pinimg.com/236x/7e/cf/80/7ecf80031ee47cdf691184d0fca5a2b1.jpg'); 
+    /* 경로에 상대경로가 들어가는건 바람직 하지 않음 
+    백그라운드 이미지로 배경 이미지를 설정할 수 있다. */    
+
+    background-size: 150px auto;
+    /* 배경 이미지 크기 설정 (너비,높이) , auto 설정도 가능
+    background-size: 150px 300px; */
+}
+
+#div2{
+    background-image: url('https://i.pinimg.com/236x/7e/cf/80/7ecf80031ee47cdf691184d0fca5a2b1.jpg'); 
+    background-size: auto 300px;
+    background-repeat: space;
+    /* 
+        #배경 이미지의 반복설정
+        repate(defalut) : 반복함
+        no-repaeat : 반복안함
+        repeat-x : 수평으로만 반복
+        repeat-y : 수직으로만 반복함
+        round : 이미지가 짤리지 않고 요소에 꽉 차게 들어갈 만큼 반복
+                이미지가 짤릴 위험이 있다면 크기를 조절해서라도 막는다.
+        space : 이미지가 짤리지 않고 요소에 들어가게 반복
+                공백을 사용하여 이미지의 비율이 일그러지는것을 막는다.
+    */
+}
+
+#div3{
+    background-image: url('https://i.pinimg.com/236x/7e/cf/80/7ecf80031ee47cdf691184d0fca5a2b1.jpg'); 
+    background-size: auto 150px;
+    background-color: aquamarine;
+    background-repeat: no-repeat;
+
+    height: 500px;
+    /* 
+        # 배경 이미지의 위치 설정 
+        - 정해진 이름들로 위치 정하기 (left, right, center, top, bottom ..)
+        - 직접 위치 지정하기도 가능(x,y 로 설정)
+    */
+    background-position: left bottom;
+    background-position: center;
+    background-position: right top;
+    background-position: right;
+    background-position: 100px 100px;
+}
+
+#div4{
+    background-image: url('https://i.pinimg.com/236x/7e/cf/80/7ecf80031ee47cdf691184d0fca5a2b1.jpg'); 
+    height: 800px;
+    background-repeat: no-repeat;
+ 
+    /* 
+         background-size
+        cover : 해당 요소를 가득 채울 수 있는 크기로 조절한다
+        contain : 해당 요소에 이미지가 완전히 포함 될 수 있는 크기로 조절한다
+    */
+    background-size: cover;
+    background-size: contain;
+
+}
+
+#div5{
+    background-image: url('https://i.pinimg.com/236x/7e/cf/80/7ecf80031ee47cdf691184d0fca5a2b1.jpg'); 
+    background-size: cover;
+    /* 웹브라우저 전체에 배경을 고정시키는 옵션 */
+    background-attachment: scroll; 
+    background-attachment: fixed; 
+}
+/*
+CSS를 공부할때 방점을 찍어야 하는 부분은 
+CSS전체 기능을 공부하려고하지말고, 원하는 화면을 만들수 있는 기능만 찍어서 공부를 먼저 하기를
+모든 내용을 다 알 기에는 양이 많고 우선 필요한 기능을 찾아서 공부
+감각을 익히다보면 직관적으로 다 알아서 할 수 있게 된다.
+
+*/

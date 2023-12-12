@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12_가상클래스</title>
+    <link rel="stylesheet" href="sheets/css12.css">
+    <script src="https://kit.fontawesome.com/2706cc5797.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h3># Pseudo class</h3>
+    
+    <ul>
+        <li>선택자 뒤에 :를 붙여 해당 요소의 특정 상황만을 선택하는 것</li>
+        <li>
+            :first-child는 첫 번째 자식요소를 선택하는 것이 아니라
+            해당 요소가 첫 번째 자식이 된 상황을 선택하는 것이다
+        </li>
+        <li>구글링 해보기~
+            https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
+         </li>
+    </ul>
+
+    <div id="container">
+        <i class="fa-solid fa-wand-magic-sparkles"></i>
+        <i class="fa-brands fa-apple"></i>
+        <i class="fa-regular fa-snowflake"></i>
+        <i class="fa-solid fa-rocket"></i>
+        <i class="fa-solid fa-mug-hot"></i>
+        <i class="fa-solid fa-snowflake"></i>
+        <i class="fa-solid fa-wand-magic-sparkles"></i>
+        <i class="fa-solid fa-star"></i>
+    </div>
+
+    <!-- <button onclick="appendSparkles();"> 추가하기 !</button> -->
+    <button onclick="appendBird();"> 새 추가하기 !</button>
+
+    <script>
+        // Javascript영역 ( 웹 브라우저에서 동작시킬 수 있는 프로그래밍 언어 )
+        // 아직 배우지 않은 부분이라 이렇게 있구나 정도로만
+        const container = document.getElementById('container');
+
+        // function appendSparkles(){    
+        //     container.innerHTML += '<i class="fa-wand-magic-sparkles"></i>';
+        // }
+
+        function appendBird() {
+            container.innerHTML += '<i class="fa-brands fa-twitter"></i>';
+        }
+    </script>
+
+    <h3>#a 태그에 특화된 pseudo class 들</h3>
+    <ul>
+        <li>:hover - 링크에 마우스를 올렸을 때</li>
+        <li>:link - 해당 링크에 방문한 적 없을 때</li>
+        <li>:active - 해당 링크를 클릭하고 있는 상황일 때</li>
+        <li>:visited - 해당 링크에 방문한 적 있을 때</li>
+    </ul>
+
+    <div>
+        <a id="mylink1" class="fa-regular fa-snowflake" href="http://naver.com"></a>
+    </div>
+</body>
+</html>
