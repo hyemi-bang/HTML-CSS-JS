@@ -1,0 +1,12 @@
+#gugudan {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    border: 1px solid black;
+}
+
+#gugudan > div {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+    background-color: aquamarine;
+}
