@@ -15,9 +15,10 @@ numbers.forEach(number => {
     //     countNum[number] = 0+1;
     // }
 });
+console.log(countNum);
 
 
-const lottoContainer = document.getElementById('output-container');
+const lottoContainer = document.getElementById('lotto-container');
 lottoContainer.style.display = 'flex';
 lottoContainer.style.gap = '10px';
 lottoContainer.style.flexWrap = 'wrap';

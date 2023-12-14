@@ -1,6 +1,6 @@
 
 console.log(add(1, 3)); // 4
-console.log(x); // undefined
+console.log(x); // x = undefined
 
 console.log(add(22)); //함수지만 위치의 영향을 받음, 함수 밑에서는 실행됨
 
@@ -15,7 +15,6 @@ var x = 10;
 //var x ; 공간은 만들어짐 
 console.log(x);  // 10 //x에 10이 들어가있음
 console.log(add(22)); 
-
 //let 은 위 같은 상황을 막기위해 만들어졌다
 // ※결론 함수 선언을 밑에서 해도 되지만 문제가 생길 위험이 있으니 지양하자
 
@@ -27,6 +26,9 @@ function mul3(num) {
 // 리턴이 없는 함수는 undefined를 리턴한다
 mul3(123); 
 console.log(mul3(234)); 
+// mul3(234) = 702가 나오는것은 mul3함수안에 console.log(num * 3);  이것때문에 나오는 것
+// console.log(mul3(234)); -> console.log(702); 가된건데 이건 함수를 안태웠다 702가 정의가 되지 않아서 undefined 인것 
+console.log(1234); // console == println(); print문은 void를 사용한다. 리턴해서 값을 쓰는게 아님
 
 //자바스크립트의 함수는 변수에 넣을 수 있다
 
@@ -75,7 +77,10 @@ console.log(gop6(5,6));// 30
 
 
 //함수 표현식은 선언과는 다르게 밑에 있으면 사용할 수 없다
-console.log(gop8(33)); 
+// 함수랑 함수표현식이랑 역할은 같아 함수로 사용이 되는데, 
+//함수 표현식은 변수에 함수를 담아놓은 변수이고 그렇기땜시 밑에 있으면 사용이 불가능하다
+//함수 표현식은 엄밀히 말하면 변수 사용이다
+console.log(gop8(33)); // 선언은 됐지만 대입이 되진 않았다 (연결되지 않은 상태)
 
 const gop8 = num => console.log(num*8); 
 // =을 중심으로 양쪽에 다 있는 존재 지만, 같은값이라고??? 위로 끌어올려 사용할 수 없는 상태???

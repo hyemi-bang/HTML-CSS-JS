@@ -6,18 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>로또 퀴즈</title>
     <style>
-        .lotto-ball {
-            width: 30px;
-            height: 30px;
-            background-color: #3498db;
-            color: #fff;
+        [id^="lotto"] {
+            border: 1px solid black;
             border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 14px;
+            width: 140px;
+            height: 100px;
+            margin: 5px;
+            text-align: center;
+            padding-top: 3%;
+            line-height: 50px;
+            font-size: 18px;
+            color: white;
             font-weight: bold;
         }
+
+        .lotto-container {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+
+        }
+
+
     </style>
 </head>
 
@@ -30,9 +40,18 @@
         +) 많이 나온 숫자가 동률일 경우 오름차순or 내림차순으로 먼저 나온 것 만 확인한다
      -->
 
-    <div id="output-container"></div>
+    <div class="lotto-container">
+        <div id="lotto1"></div>
+        <div id="lotto2"></div>
+        <div id="lotto3"></div>
+        <div id="lotto4"></div>
+        <div id="lotto5"></div>
+        <div id="lotto6"></div>
+    </div>
 
-    <script src="resource/js16Quiz.js"></script>
+    <!-- <script src="resource/js16Quiz=.js"></script> -->
+    <script src="resource/js16Q.js"></script>
+
 </body>
 
 </html>
