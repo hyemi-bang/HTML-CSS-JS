@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hello.html</title>
+</head>
+<body>
+
+    <h4>JS를 이용하여 브라우저에 데이터 출력하는 방법</h3>
+    <ul>
+        <li>innerHTML : 브라우저 안에 있는 HTML요소에 데이터출력</li>
+        <li>document.write() : 브라우저에 간단한 데이터 출력 <br>
+        &nbsp;&nbsp; 실제 프로그램에서는 거의 사용되지 않는다</li>
+        <li>alert(): 브라우저 알림창에 데이터 출력</li>
+        <li>console.log() : 브라우저 콘솔에 데이터 출력</li>
+    </ul>
+
+    <p id="show1"></p>
+    <p id="show2"></p>
+
+    <script>
+        document.getElementById('show1').innerHTML = '안녕하세요';
+        document.getElementById('show2').innerHTML = 10+20;
+        document.write(10+20);
+        alert(10+20); 
+        console.log(10+20);
+
+    </script>
+</body>
+</html>

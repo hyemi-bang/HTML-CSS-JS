@@ -1,0 +1,15 @@
+#lotto {
+    display: flex;
+}
+
+#lotto > div {
+    box-sizing: border-box;
+    padding: 35px;
+    font-size: 30px;
+    border-radius: 50%;
+    background-color: tomato;
+    color: white;
+    width: 150px;
+    height: 130px;
+    text-align: center;
+}
