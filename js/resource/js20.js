@@ -6,20 +6,19 @@ const unShiftBtn = document.querySelector('#unShift');
 const out = document.querySelector('#out');
 
 const stars = out.getElementsByClassName('material-symbols-outlined');
-// for(let i =0 ; i < stars.length; i++){
-//     stars[i].style.fontSize = '10px';
-// }
+
 //getElementsByClassName 메서드는 HTMLCollection을 반환하며, 이는 배열이 아닌 유사 배열 객체라서 style 직접 적용 불가능
 
 // 별에 숫자 붙이기
 let starCount = 0;
+
 
 function createStar() {
     const newDiv = document.createElement('div');
     const newText = document.createTextNode('Grade');
 
     newDiv.classList.add('material-symbols-outlined');
-    newDiv.style.fontSize = '30px';
+    newDiv.style.fontSize = '35px';
     newDiv.style.color = 'plum';
 
     newDiv.appendChild(newText);
@@ -27,7 +26,13 @@ function createStar() {
 
     starCount++;
     const countText = document.createTextNode(`${starCount}`);
-    newDiv.appendChild(countText);
+    // 별에 숫자 붙이기
+    const countStars = document.createElement('span');
+    countStars.style.fontSize='10px';
+    countStars.style.verticalAlign='top';
+
+    countStars.appendChild(countText);
+    newDiv.appendChild(countStars);
 
     return newDiv;
 }
@@ -54,6 +59,8 @@ unShiftBtn.addEventListener('click', (e) => {
     const newStar = createStar(); 
     out.insertBefore(newStar, out.firstChild); // 맨 앞에 추가
 });
+
+
 
 /*
 // 새 요소 만들어서 자식으로 추가하기
