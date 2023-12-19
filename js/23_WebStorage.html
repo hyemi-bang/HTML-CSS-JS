@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>23_WebStorage.html</title>
+    <link rel="icon" type="image/x-icon" href="https://zzzscore.com/1to50/img/ico.png" />
+    <link rel="stylesheet" href="./resource/css23Q.css">
+</head>
+<body>
+    
+    <h3># Web Storage API</h3>
+
+    <ul>
+        <li>웹 브라우저에 데이터를 보관할 수 있는 공간</li>
+        <li>데이터를 Key-Value 형식으로 저장할 수 있다</li>
+        <li>로컬 스토리지는 웹 브라우저를 종료하더라도 데이터가 유지된다</li>
+        <li>세션 스토리지는 웹 브라우저를 종료하면 데이터가 세선과 함께 종료된다. <br>
+            세션 : 서버와 연결이 유지되고 있는 상태, ex>은행 사이트 로그인</li>
+    </ul>
+
+    <!-- <script src="./resource/js23.js"></script> -->
+
+    <hr>
+
+    <h3># 1 to 50 만들기</h3>
+
+    <ul>
+        <li>https://zzzscore.com/1to50/ 게임을 참고하여 만들기</li>
+        <li>게임이 끝날 떄 전적을 로컬 스토리지에 기록하기</li>
+        <li>로컬스토리지에 저장되어 있는 랭킹을 꺼내서 순서대로 출력해주기(콘솔x, 웹페이지에)</li>
+    </ul>
+
+    <hr>
+
+    <div id="gameSet">
+        <div class="lineWrapB">
+            <div class="description">
+                <h3><img src="https://zzzscore.com/1to50/img/ico.png" alt="1to50img">1to50</h3>
+                <p>1부터 50까지 순서대로 터치하여 없애보세요</p>
+                <button><a class="resetBtn" href="file:///C:/JavaFullstack_hm/front-workspace/js/23_WebStorage.html">다시하기 </a>
+                </button>
+            </div>
+        </div>
+        <div class="grid" id="grid">
+            <!-- <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+            <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+            <div></div><div></div><div></div><div></div><div></div> -->
+        </div>
+
+    </div>
+
+    <script src="resource/js23Q.js"></script>
+
+</body>
+</html>

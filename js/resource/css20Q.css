@@ -1,0 +1,27 @@
+#out{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 10px;
+    margin: 20px;
+}
+
+.star {
+    background-color: darkblue;
+    color: gold;
+    font-size: 50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 20%;
+    text-align: center;
+    position: relative;
+    /*line-height를 요소와 똑같이 주면 가운데 정렬이 된다 */
+    line-height: 100px;  
+}
+
+.starNum{
+    position: absolute;
+    font-size: 10px;
+    right : 10px;
+    top: 10px;
+    line-height: initial; /*initial = 초기값*/
+}

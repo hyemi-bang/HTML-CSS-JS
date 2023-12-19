@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20_Node_Teacher.html</title>
+    <!-- Google Fonts API를 통해 Material Symbols Outlined 폰트를 가져옴 -->
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="resource/css20Q.css">
+</head>
+
+<body>
+
+    <h3> # 연습문제</h3>
+    <ol>
+        <ul>버튼을 누르면 out에 별이 추가되거나 제거된다</ul>
+        <ul>모든 버튼이 올바르게 동작한다</ul>
+        <ul>
+            각 별의 오른쪽 맨위 모서리에는 해당 별이 몇번째로 추가되었는지
+            알 수 있는 번호가 붙어있어야 한다
+        </ul>
+        <ul>
+            방향키 왼쪽을 누르면 shift
+            방향키 오른쪽을 누르면 unshift
+            방향키 위쪽을 누르면 push
+            방향키 아래쪽을 누르면 pop이 동작하도록 만들어보세요
+        </ul>
+    </ol>
+
+
+    <!-- 버튼들을 생성하기 위한 HTML 버튼 엘리먼트 -->
+    <button id="pushBtn">Push!</button>
+    <button id="popBtn">Pop!</button>
+    <button id="shiftBtn">Shift!</button>
+    <button id="unshiftBtn">UnShift!</button>
+
+    <!-- 별 모양의 div가 추가될 영역 -->
+    <div id="out"></div>
+
+    <!-- 자바스크립트 파일을 불러와 실행 -->
+    <script src="./resource/js20Q.js"></script>
+</body>
+
+</html>

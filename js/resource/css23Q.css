@@ -1,0 +1,31 @@
+#gameSet {
+    text-align: center;
+    border-bottom: 1px solid gray;
+}
+
+.description {
+    padding: 20px;
+    box-shadow: 0 0 10px rgb(224, 220, 220);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+    width: 300px;
+    margin: auto;
+ 
+}
+
+.grid>div {
+    background-color: chocolate;
+    color : white;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    height: 50px;
+    border-radius: 8px;
+}
