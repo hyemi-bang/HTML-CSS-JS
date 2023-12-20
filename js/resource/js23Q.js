@@ -4,7 +4,7 @@
 // 더 나올 숫자가 없을때는 흰색 배경
 // 50까지 다 누르면 몇 초 동안 했는지 숫자판 있던 위치에 뜸
 
-//4차
+//5차
 
 const createRandomDiv = () => {
   const grid = document.getElementById("grid");
