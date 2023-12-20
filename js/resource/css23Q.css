@@ -4,21 +4,21 @@
 }
 
 .description {
-    padding: 20px;
+    padding: 25px;
     box-shadow: 0 0 10px rgb(224, 220, 220);
 }
 
 .grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 5px;
+    gap: 8px;
     width: 300px;
     margin: auto;
  
 }
 
 .grid>div {
-    background-color: chocolate;
+    background-color: blanchedalmond;
     color : white;
     display: flex;
     flex-wrap: nowrap;
@@ -27,5 +27,8 @@
     font-size: 18px;
     font-weight: bold;
     height: 50px;
-    border-radius: 8px;
+}
+
+.white-bg{
+    background-color: white;
 }
