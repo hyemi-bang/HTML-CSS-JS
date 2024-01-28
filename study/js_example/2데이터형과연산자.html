@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>변수</title>
+    <title>변수,연산자</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Afacad&display=swap');
         body {
@@ -111,6 +111,28 @@
         document.write(id === Symbol('id')); 
         // id와 새롭게 생성된 Symbol('id') 다르다. 심볼은 생성될 때마다 고유한 값을 가진다.
         document.write("<br>");
+
+        let aa =3, bb=4, cc;
+       aa %= 10;
+       console.log(aa);
+       bb = aa**bb;
+       console.log(bb);
+       cc = aa-bb;
+       cc++;
+       console.log(cc);
+
+       let d=3, e=4, f=2;
+       d +=7;
+       d--;
+        console.log(d);
+        e -= 2;
+        e++;
+        console.log(e);
+        f %=5;
+        console.log(f);
+        f = d+e;
+        console.log(f);
+        console.log(d+e+f);
    </script>
 </body>
 </html>
