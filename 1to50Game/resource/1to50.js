@@ -78,23 +78,32 @@ const createRandomDiv = () => {
     const startTime = new Date().getTime();
     timer = setInterval(() => {
       elapsedTime = Math.floor((new Date().getTime() - startTime) / 1000);
+      const minutes = Math.floor(elapsedTime / 60);
+      const seconds = elapsedTime % 60;
+
+      const timeForm = `${minutes < 10 ? '0' : ''}${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
       if (timerElement) {
-        timerElement.textContent = elapsedTime;
+        timerElement.textContent = timeForm;
       }
     }, 1000);
   }
 
-  // 타이머 종료 함수
-  function stopTimer() {
-    clearInterval(timer);
-    const result = document.getElementById("grid");
-    if (result) {
-      result.innerHTML = "게임종료! 총 걸린 시간: " + elapsedTime;
-      localStorage.setItem("gameResult", elapsedTime);
-    } else {
-      alert("Error");
-    }
+   // 게임이 시작되면 타이머 표시
+   if (timerElement) {
+    timerElement.textContent = "00:00";
   }
+
+  // // 타이머 종료 함수
+  // function stopTimer() {
+  //   clearInterval(timer);
+  //   const result = document.getElementById("timer");
+  //   if (result) {
+  //     result.textContent = "게임종료! 총 걸린 시간: " + timeForm ;
+  //     localStorage.setItem("gameResult", elapsedTime);
+  //   } else {
+  //     alert("Error");
+  //   }
+  // }
 
   initGrid();
 };
