@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로또 퀴즈</title>
+    <style>
+        [id^="lotto"] {
+            border: 1px solid black;
+            border-radius: 50%;
+            width: 140px;
+            height: 100px;
+            margin: 5px;
+            text-align: center;
+            padding-top: 3%;
+            line-height: 50px;
+            font-size: 18px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .lotto-container {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <!-- 
+        1. 배열에 랜덤으로 1 ~ 45 사이의 숫자를 1000개 추가 한다.
+        2. 각 숫자들이 나온 횟수를 센다
+        3. 가장 많이 나온 숫자 6개를 HTML에 동그란 공 모양으로 출력해준다
+        +) 많이 나온 숫자가 동률일 경우 오름차순or 내림차순으로 먼저 나온 것 만 확인한다
+     -->
+
+    <div class="lotto-container">
+        <div id="lotto1"></div>
+        <div id="lotto2"></div>
+        <div id="lotto3"></div>
+        <div id="lotto4"></div>
+        <div id="lotto5"></div>
+        <div id="lotto6"></div>
+    </div>
+
+    <!-- <script src="resource/js16Quiz=.js"></script> -->
+    <script src="resource/js16Q.js"></script>
+
+</body>
+
+</html>
