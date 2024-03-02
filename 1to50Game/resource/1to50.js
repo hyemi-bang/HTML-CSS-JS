@@ -93,18 +93,6 @@ const createRandomDiv = () => {
     timerElement.textContent = "00:00";
   }
 
-  // // 타이머 종료 함수
-  // function stopTimer() {
-  //   clearInterval(timer);
-  //   const result = document.getElementById("timer");
-  //   if (result) {
-  //     result.textContent = "게임종료! 총 걸린 시간: " + timeForm ;
-  //     localStorage.setItem("gameResult", elapsedTime);
-  //   } else {
-  //     alert("Error");
-  //   }
-  // }
-
   initGrid();
 };
 
@@ -118,3 +106,26 @@ reset.addEventListener("click", ()=> location.reload(true));
 const storedResult = localStorage.getItem("gameResult");
 console.log(storedResult);
 document.getElementById("ranks").textContent = storedResult;
+
+const rankSort = [];
+// 로컬 스토리지에서 랭킹 정보 가져오기
+for (let i = 1; i <= 10; i++) {
+  const result = localStorage.getItem('thx' + i);
+  if (result !== null) {
+    rankSort.push(parseFloat(result));
+  }
+}
+
+rankSort.sort((a, b) => a - b);
+
+const rank = document.querySelector('#ranks');
+rank.innerHTML = "<div>TQ~ For Playing</div>";
+
+for (let i = 0; i < Math.min(rankSort.length, 3); i++) {
+  rank.innerHTML += `<div>${i + 1}등 ${rankSort[i]}</div>`;
+}
+
+localStorage.setItem('thx1', 120.7);
+localStorage.setItem('thx2', 67.2);
+localStorage.setItem('thx3', 82.5);
+

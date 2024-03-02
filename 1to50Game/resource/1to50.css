@@ -42,4 +42,5 @@
     text-align: center;
     line-height: 35px;
     cursor: pointer;
+    border-radius: 5px; 
 }
