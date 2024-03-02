@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1to50</title>
+    <link rel="icon" type="image/x-icon" href="https://zzzscore.com/1to50/img/ico.png" />
+    <link rel="stylesheet" href="./resource/1to50.css">
+</head>
+<body>
+<!--  
+    <h3># 1 to 50 만들기</h3>
+
+    <ul>
+        <li>https://zzzscore.com/1to50/ 게임을 참고하여 만들기</li>
+        <li>5 * 5  배열에 1~25 랜덤으로 지정</li>
+        <li>뒤에 숨겨진 타일 26~50까지 랜덤 지정</li>
+        <li>제일 작은 수 (1)을 클릭하면 타이머 작동 / 그외에는 작동되지 않도록 하기</li>
+        <li>제일 큰 수(50)을 클릭하면 타이머저장 및 로컬스토리지에 값 저장</li>
+        <li>게임이 끝날 때마다 전적을 로컬 스토리지에 기록하기</li>
+        <li>로컬스토리지에 저장되어 있는 랭킹을 꺼내서 순서대로 출력해주기(콘솔x, 웹페이지에)</li>
+    </ul>
+-->
+    <div id="gameSet">
+        <div class="lineWrapB">
+            <div class="description">
+                <h3><img src="https://zzzscore.com/1to50/img/ico.png" alt="1to50img">1to50</h3>
+                <p>1부터 50까지 순서대로 터치하여 없애보세요</p>                
+            </div>
+        </div>
+        <div id="timer"></div>
+        <div class="grid" id="gridX5">
+        </div>
+    </div>
+    <div class="reset">다시하기 </div>
+    <div id="ranks">
+        <p>ranks</p>
+    </div>
+
+
+    <script src="resource/1to50.js"></script>
+
+</body>
+</html>

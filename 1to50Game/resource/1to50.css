@@ -1,0 +1,45 @@
+#gameSet {
+    text-align: center;
+    border-bottom: 1px solid gray;
+}
+
+.description {
+    padding: 25px;
+    box-shadow: 0 0 10px rgb(224, 220, 220);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+    width: 300px;
+    margin: auto;
+}
+
+.grid>div {
+    background-color: blanchedalmond;
+    color : white;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    height: 50px;
+}
+
+.white-bg{
+    background-color: white;
+}
+
+.reset{
+    border: 1px solid black;
+    width: 150px;
+    height: 80px;
+    margin: 5px;
+    padding-top: 35px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 35px;
+    cursor: pointer;
+}

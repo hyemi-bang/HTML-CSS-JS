@@ -5,16 +5,26 @@
 
 #quiz1 li:nth-of-type(even){
    border : 2px solid red;
+
+   background-color: #4CAF50;
+	border-color: #2977bb;
 }
 #quiz2 li:first-child, li:last-child{
     color : red;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
 }
 
 /* 선생님 해설 */
 #quiz1 > li:nth-child(even){
     border : 2px solid red;
+    background-color: ghostwhite;
+    display:grid; 
+    grid-template-columns: repeat(6, 1fr);
  }
 
 #quiz2 > li:first-child, #quiz2 > li:last-child{
     color : red;
+
 }
