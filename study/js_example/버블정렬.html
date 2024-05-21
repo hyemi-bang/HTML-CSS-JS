@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>버블정렬.html</title>
+</head>
+<body>
+    <h1>버블 정렬 결과</h1>
+    <p id="sorted-array"></p>
+    
+    <script src="resource/버블정렬.js"></script>
+    <script>
+        const array = [65, 55, 35, 15, 25, 10];
+        const sortedArray = bubbleSort(array);
+        document.getElementById('sorted-array').innerText = sortedArray.join(', ');
+    </script>
+</body>
+</html>
